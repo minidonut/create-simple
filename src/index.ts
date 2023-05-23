@@ -1,1 +1,1 @@
-console.log('hello ts-app');
+console.log('create-simple is called with:', process.argv);

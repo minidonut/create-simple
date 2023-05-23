@@ -11,9 +11,12 @@
     "name": "Karl Saehun Chung",
     "email": "nycom13@gmail.com"
   },
+  "bin": {
+    "create-simple": "dist/index.js"
+  },
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json & ./postbuild.sh",
     "lint": "eslint . --ext .js,.ts",
     "start": "ts-node src/index.ts",
     "start:debug": "node --require ts-node/register --inspect-brk src/index.ts",
